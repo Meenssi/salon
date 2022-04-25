@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Roboto+Condensed:ital,wght@0,300;1,300&display=swap%27%27'); 
+
+/* font นี้เอามาเพิ่ม ลบออกทีหลังได้*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@600&family=Dosis&family=Inter:wght@500&display=swap');
+
+body{
+  background-image: url('/img/backgroundsalon.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+main{
+    height: 100;
+    display: grid;
+    grid-template-columns: minmax(60px, 1fr) repeat(6, minmax(50px, 190px))
+    minmax(60px, 1fr);
+}
+
+header{
+    grid-column: 1 / span 8;
+    height: 100px;
+    padding: 1em;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo {
+    width:400px;
+
+}
+
+.menu{
+    margin-left: auto;
+    font-family: 'Dosis', sans-serif; /* สำหรับเปลี่ยน font */
+}
+
+a{
+    margin-right: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+section{
+    grid-column: 1 / span 8;
+    padding: 1em;
+    margin-top: 10px;
+}
+
+h1{
+    font-family: 'Dosis', sans-serif;  /* สำหรับเปลี่ยน font */
+}
+
+/* Payment กับรูป QrCode*/
+.content { 
+    text-align: center; /* ทำให้อยู่ตรงกลาง */
+}
+
+.QrCode { /* ขนาดรูป */
+    width: 450px;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width:850px){
+   .logo {
+       width: 300px;
+   }
+}
