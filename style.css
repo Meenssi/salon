@@ -53,7 +53,7 @@ nav{
     margin-bottom: 100px;
 }
 
-a{
+.menu a{
     margin-right: 50px;
     text-decoration: none;
     color: black;
@@ -79,6 +79,10 @@ h1{
 .QrCode { /* ขนาดรูป */
     width: 450px;
     border-radius: 10px;
+}
+
+.button {
+    background-color: aqua;
 }
 
 @media only screen and (max-width:850px){
